@@ -269,6 +269,7 @@
     position: relative;
     font-family: 'Open Sans';
     background: linear-gradient(180deg, rgba(250, 251, 251, 0.0001) 0%, #F8FBFF 100%);
+    overflow: hidden;
 }
 
 .title {
@@ -372,3 +373,92 @@
 }
 
 /* RESPONSIVE VALUE SECTION */
+@media (max-width: 1439px) {
+    #values {
+        height: 1100px;
+    }
+
+    .title {
+        left: 60px;
+    }
+
+    .container_values {
+        flex-direction: column;
+        padding: 50px 60px;
+    }
+
+    .container_values .right {
+        gap: 20px;
+    }
+
+    .values_card {
+        max-width: 310px;
+    }
+
+    .group2 {
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    #values {
+        height: 1580px;
+    }
+
+    .title {
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .title h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .container_values {
+        top: 460px;
+        padding: 80px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_values .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_values .right {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_values .left h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .container_values .left p {
+        text-align: center;
+    }
+
+    .values_card {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .values_card p {
+        text-align: center;
+    }
+
+    .wave {
+        display: none;
+    }
+
+}

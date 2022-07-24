@@ -6,6 +6,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 import Oval from '../public/assets/Oval.svg'
 import Oval2 from '../public/assets/Oval2.svg'
 import Square from '../public/assets/Square.svg'
+import Rectangle from '../public/assets/Rectangle.svg'
 import OvalFill from '../public/assets/OvalFill.svg'
 import OvalFill2 from '../public/assets/OvalFill2.svg'
 import Shape from '../public/assets/Shape.svg'
@@ -124,6 +125,18 @@ export default function Home() {
           <div className={styles.team_title}>
             <h1>Who We Are</h1>
             <p>We’re equal parts left and right brained. And we’re generally likeable. We won’t bored you with more adjectives. See for yourself.</p>
+          </div>
+        </section>
+
+        <section id={styles.whatwedo}>
+          <div className={styles.rectangle}>
+            <Image src={Rectangle} alt="square" />
+          </div>
+
+          <div className={styles.whatwedo_content}>
+            <h1>What we do</h1>
+            <p>We supply enterprises, organizations and institutes of high-tech industries with modern components. We build long-term trusting relationships with our customers and partnes for further fruitful cooperations. <br /><br />
+              From year to year we strive to invent the most innovative technology that is used by both small enterprises and space enterprises.</p>
           </div>
         </section>
       </Layout>

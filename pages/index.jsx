@@ -4,10 +4,12 @@ import Layout from '../components/Layout/Layout'
 import styles from '../styles/Home.module.css'
 import { BsArrowRightShort } from "react-icons/bs";
 import Oval from '../public/assets/Oval.svg'
+import Oval2 from '../public/assets/Oval2.svg'
 import Square from '../public/assets/Square.svg'
 import OvalFill from '../public/assets/OvalFill.svg'
 import OvalFill2 from '../public/assets/OvalFill2.svg'
 import Shape from '../public/assets/Shape.svg'
+import Shape2 from '../public/assets/Shape2.svg'
 import Collaboration from '../public/assets/Collaboration.svg'
 import Transparency from '../public/assets/Transparency.svg'
 import Trust from '../public/assets/Trust.svg'
@@ -92,6 +94,36 @@ export default function Home() {
 
           <div className={styles.wave}>
             <Image src={Wave} alt="OvalFill2" />
+          </div>
+        </section>
+
+        <section id={styles.team}>
+          <div className={styles.oval2}>
+            <Image src={Oval2} alt="Oval2" />
+          </div>
+
+          <div className={styles.shape2}>
+            <Image src={Shape2} alt="shape" />
+          </div>
+
+          <div className={styles.list}>
+            <div className={styles.item1}>
+              <Image src={Square} alt="square" width={314} height={336} />
+            </div>
+            <div className={styles.item2}>
+              <Image src={Square} alt="square" width={314} height={336} />
+            </div>
+            <div className={styles.item3}>
+              <Image src={Square} alt="square" width={314} height={336} />
+            </div>
+            <div className={styles.item4}>
+              <Image src={Square} alt="square" width={314} height={336} />
+            </div>
+          </div>
+
+          <div className={styles.team_title}>
+            <h1>Who We Are</h1>
+            <p>We’re equal parts left and right brained. And we’re generally likeable. We won’t bored you with more adjectives. See for yourself.</p>
           </div>
         </section>
       </Layout>

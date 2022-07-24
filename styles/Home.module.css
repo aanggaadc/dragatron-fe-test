@@ -1,5 +1,4 @@
 /* HERO SECTION */
-
 #hero {
     width: 100%;
     height: 970px;
@@ -459,6 +458,166 @@
 
     .wave {
         display: none;
+    }
+
+}
+
+/* SECTION TEAM */
+#team {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team_title {
+    width: 434px;
+    position: absolute;
+    left: 150px;
+    top: 120px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Open Sans';
+}
+
+.team_title h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    color: #183B56;
+    margin: 0;
+}
+
+.team_title p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #5A7184;
+    margin: 0;
+}
+
+.oval2 {
+    position: absolute;
+    top: -600px;
+    right: 0;
+}
+
+.shape2 {
+    position: absolute;
+    right: -5px;
+    top: 520px;
+}
+
+.list {
+    position: relative;
+    top: 100px;
+    left: 440px;
+    width: 1022px;
+    height: 712px;
+    z-index: 1;
+}
+
+.list .item1 {
+    position: absolute;
+    left: 0;
+    top: 250px;
+}
+
+.list .item2 {
+    position: absolute;
+    top: 0;
+    left: 350px;
+}
+
+.list .item3 {
+    position: absolute;
+    bottom: 0;
+    left: 350px;
+}
+
+.list .item4 {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+/* RESPONSIVE TEAM SECTION */
+
+@media (max-width: 1439px) {
+    .team_title {
+        left: 60px;
+    }
+}
+
+@media (min-width: 581px) and (max-width: 768px) {
+    #team {
+        height: 1050px;
+    }
+
+    .team_title {
+        top: 20px;
+        left: 60px;
+    }
+
+    .shape2 {
+        top: 800px;
+        right: 30px;
+    }
+
+    .oval2 {
+        top: -200px;
+        right: -300px;
+    }
+
+    .list {
+        top: 250px;
+        left: -130px;
+    }
+}
+
+@media (max-width: 580px) {
+    #team {
+        height: 750px;
+    }
+
+    .team_title {
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 0 24px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team_title h1 {
+        text-align: center;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .team_title p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .shape2 {
+        display: none;
+    }
+
+    .oval2 {
+        display: none;
+    }
+
+    .list {
+        transform: scale(0.55);
+        top: 120px;
+        left: -330px;
     }
 
 }

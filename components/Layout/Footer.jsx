@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import styles from './Footer.module.css'
-import Logo from '../../public/Logo.svg'
-import Icon from '../../public/Icon.svg'
-import Heart from '../../public/Heart.svg'
+import Logo from '../../public/assets/Logo.svg'
+import Icon from '../../public/assets/Icon.svg'
+import Heart from '../../public/assets/Heart.svg'
 
 export default function Footer() {
     return (

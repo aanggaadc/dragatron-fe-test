@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Logo from '../../public/Logo.svg'
+import Logo from '../../public/assets/Logo.svg'
 import Image from 'next/image'
 import styles from './Header.module.css'
 import { BsList } from "react-icons/bs";

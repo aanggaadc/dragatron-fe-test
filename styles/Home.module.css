@@ -1,3 +1,5 @@
+/* HERO SECTION */
+
 #hero {
     width: 100%;
     height: 970px;
@@ -93,7 +95,7 @@
     right: -47px;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE HERO SECTION */
 
 @media (min-width: 1171px) and (max-width: 1360px) {
     .content {
@@ -147,7 +149,6 @@
         right: -299px;
     }
 }
-
 
 @media (min-width: 760px) and (max-width: 999px) {
     #hero {
@@ -249,7 +250,7 @@
     }
 
     .group {
-       display: none;
+        display: none;
     }
 
     .shape {
@@ -259,3 +260,115 @@
         height: 168px;
     }
 }
+
+/* VALUES SECTION */
+
+#values {
+    width: 100%;
+    height: 940px;
+    position: relative;
+    font-family: 'Open Sans';
+    background: linear-gradient(180deg, rgba(250, 251, 251, 0.0001) 0%, #F8FBFF 100%);
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 490px;
+}
+
+.title h1 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    color: #183B56;
+}
+
+.container_values {
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    height: 800px;
+    padding: 80px 150px;
+    z-index: 1;
+    display: flex;
+    gap: 80px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.container_values .left {
+    min-width: 300px;
+}
+
+.container_values .left h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    color: #183B56;
+    margin-top: 0;
+}
+
+.container_values .left p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #5A7184;
+    margin-top: 0;
+}
+
+.container_values .right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.values_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 360px;
+}
+
+.values_card h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #183B56;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.values_card p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #5A7184;
+}
+
+.group2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.wave {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+}
+
+/* RESPONSIVE VALUE SECTION */

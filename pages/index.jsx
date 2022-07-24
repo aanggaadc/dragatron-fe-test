@@ -3,10 +3,16 @@ import Image from 'next/image'
 import Layout from '../components/Layout/Layout'
 import styles from '../styles/Home.module.css'
 import { BsArrowRightShort } from "react-icons/bs";
-import Oval from '../public/Oval.svg'
-import Square from '../public/Square.svg'
-import OvalFill from '../public/OvalFill.svg'
-import Shape from '../public/Shape.svg'
+import Oval from '../public/assets/Oval.svg'
+import Square from '../public/assets/Square.svg'
+import OvalFill from '../public/assets/OvalFill.svg'
+import OvalFill2 from '../public/assets/OvalFill2.svg'
+import Shape from '../public/assets/Shape.svg'
+import Collaboration from '../public/assets/Collaboration.svg'
+import Transparency from '../public/assets/Transparency.svg'
+import Trust from '../public/assets/Trust.svg'
+import Integrity from '../public/assets/Integrity.svg'
+import Wave from '../public/assets/Wave.svg'
 
 export default function Home() {
   return (
@@ -38,6 +44,54 @@ export default function Home() {
           </div>
           <div className={styles.shape}>
             <Image src={Shape} alt="shape" />
+          </div>
+        </section>
+
+        <section id={styles.values}>
+          <div className={styles.title}>
+            <h1>A few things you should know about Us.</h1>
+          </div>
+
+          <div className={styles.container_values}>
+            <div className={styles.left}>
+              <h1>Our values</h1>
+              <p>We strive to redefine the standard of excellence.</p>
+            </div>
+
+            <div className={styles.right}>
+              <div className={styles.values_card}>
+                <Image src={Collaboration} alt="Collaboration" width={64} height={64} />
+                <h2>Collaboration</h2>
+                <p>Collaboration is the process of two or more people or organizations working together to complete a task or achieve a goal. </p>
+              </div>
+
+              <div className={styles.values_card}>
+                <Image src={Transparency} alt="Collaboration" width={64} height={64} />
+                <h2>Transparency</h2>
+                <p>Transparency, as used in science is operating in such a way that it is easy for others to see what actions are performed. </p>
+              </div>
+
+              <div className={styles.values_card}>
+                <Image src={Trust} alt="Collaboration" width={64} height={64} />
+                <h2>Trust</h2>
+                <p>Trust will help us foster a positive and productive environment that delivers value to our users and customers. </p>
+              </div>
+
+              <div className={styles.values_card}>
+                <Image src={Integrity} alt="Collaboration" width={64} height={64} />
+                <h2>Integrity</h2>
+                <p>Integrity is the practice of showing a consistent and uncompromising adherence to strong moral and ethical principles. </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div className={styles.group2}>
+            <Image src={OvalFill2} alt="OvalFill2" />
+          </div>
+
+          <div className={styles.wave}>
+            <Image src={Wave} alt="OvalFill2" />
           </div>
         </section>
       </Layout>

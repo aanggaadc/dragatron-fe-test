@@ -722,7 +722,7 @@
 #join {
     background: linear-gradient(0deg, rgba(250, 251, 251, 0.0001) 0%, #F8FBFF 100%);
     width: 100%;
-    height: 950px;
+    height: 900px;
     position: relative;
     overflow: hidden;
 }
@@ -863,5 +863,229 @@
         font-size: 16px;
         line-height: 28px;
     }
- 
+
+}
+
+#job {
+    width: 100%;
+    height: 1000px;
+    padding: 50px 220px;
+    font-family: 'Open Sans';
+}
+
+#job h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    color: #183B56;
+    margin: 0;
+}
+
+.job_top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job_top p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #5A7184;
+}
+
+.top_left {
+    width: 330px;
+}
+
+.top_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.top_right select {
+    background: #FFFFFF;
+    border: 1px solid #E5EAF4;
+    width: 180px;
+    height: 56px;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #B3BAC5;
+}
+
+.search_bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 349px;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #E5EAF4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.search_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.search_bar input {
+    border: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #B3BAC5;
+}
+
+.button_inside {
+    background: #1565D8;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    width: 94px;
+    height: 40px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.button_outside {
+    width: 100%;
+    height: 40px;
+    background: #1565D8;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    display: none;
+}
+
+.job_bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.job_card {
+    width: 100%;
+    height: 94px;
+    padding: 20px 20px;
+    background: #FFFFFF;
+    border: 1px solid #E5EAF4;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job_title h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1565D8;
+    margin: 0;
+}
+
+.job_title p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5A7184;
+    margin: 0;
+}
+
+/* RESPONSIVE JOB SECTION */
+@media (min-width: 1024px) and (max-width: 1300px) {
+    #job {
+        padding: 50px 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #job {
+        padding: 50px 50px;
+    }
+
+    .job_top {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .search_bar {
+        width: 470px;
+    }
+}
+
+@media (max-width: 767px) {
+    #job {
+        height: 1250px;
+        padding: 50px 30px;
+    }
+
+    .job_top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top_left {
+        width: 100%;
+    }
+
+    .top_right {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .top_right select {
+        width: 100%;
+    }
+
+    .search_bar {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .button_inside {
+        display: none;
+    }
+
+    .button_outside {
+        display: block;
+    }
+
+    .job_top p {
+        font-size: 16px;
+        line-height: 28px;
+    }
 }

@@ -2,7 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Layout from '../components/Layout/Layout'
 import styles from '../styles/Home.module.css'
-import { BsArrowRightShort } from "react-icons/bs";
+import { BsArrowRightShort, } from "react-icons/bs";
+import { BiSearch } from "react-icons/bi";
+import { FcNext } from "react-icons/fc";
 import Oval from '../public/assets/Oval.svg'
 import Oval2 from '../public/assets/Oval2.svg'
 import Square from '../public/assets/Square.svg'
@@ -194,6 +196,80 @@ export default function Home() {
                   <p>Stages</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section id={styles.job}>
+          <h1>Let’s find you an open position.</h1>
+          <div className={styles.job_top}>
+            <div className={styles.top_left}>
+              <p>Find the right job for you no matter what it is that you do.</p>
+            </div>
+
+            <div className={styles.top_right}>
+              <select id="location">
+                <option value="all">All Location</option>
+              </select>
+
+              <div className={styles.search_bar}>
+                <div className={styles.search_logo}>
+                  <BiSearch size={20} color='#B3BAC5' />
+                  <input type="text" placeholder="Search Positions" />
+                </div>
+                <button className={styles.button_inside}>Search</button>
+              </div>
+              <button className={styles.button_outside} >Get Started</button>
+            </div>
+          </div>
+
+          <div className={styles.job_bottom}>
+            <div className={styles.job_card}>
+              <div className={styles.job_title}>
+                <h2>UX Designer</h2>
+                <p>New York, USA</p>
+              </div>
+              <FcNext />
+            </div>
+
+            <div className={styles.job_card}>
+              <div className={styles.job_title}>
+                <h2>UI Designer</h2>
+                <p>Los Angeles, USA</p>
+              </div>
+              <FcNext />
+            </div>
+
+            <div className={styles.job_card}>
+              <div className={styles.job_title}>
+                <h2>Copy Writer</h2>
+                <p>New York, USA</p>
+              </div>
+              <FcNext />
+            </div>
+
+            <div className={styles.job_card}>
+              <div className={styles.job_title}>
+                <h2>Front-End Designer</h2>
+                <p>San Fransisco, CA, USA</p>
+              </div>
+              <FcNext />
+            </div>
+
+            <div className={styles.job_card}>
+              <div className={styles.job_title}>
+                <h2>Front-End Engineer</h2>
+                <p>San Fransisco, CA, USA</p>
+              </div>
+              <FcNext />
+            </div>
+
+            <div className={styles.job_card}>
+              <div className={styles.job_title}>
+                <h2>Senior Back-end Developer</h2>
+                <p>New York, USA</p>
+              </div>
+              <FcNext />
             </div>
           </div>
         </section>

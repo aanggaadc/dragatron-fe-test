@@ -16,6 +16,7 @@ import Transparency from '../public/assets/Transparency.svg'
 import Trust from '../public/assets/Trust.svg'
 import Integrity from '../public/assets/Integrity.svg'
 import Wave from '../public/assets/Wave.svg'
+import IconChecklist from '../public/assets/IconChecklist.svg'
 
 export default function Home() {
   return (
@@ -94,7 +95,7 @@ export default function Home() {
           </div>
 
           <div className={styles.wave}>
-            <Image src={Wave} alt="OvalFill2" />
+            <Image src={Wave} alt="Wave" />
           </div>
         </section>
 
@@ -137,6 +138,63 @@ export default function Home() {
             <h1>What we do</h1>
             <p>We supply enterprises, organizations and institutes of high-tech industries with modern components. We build long-term trusting relationships with our customers and partnes for further fruitful cooperations. <br /><br />
               From year to year we strive to invent the most innovative technology that is used by both small enterprises and space enterprises.</p>
+          </div>
+        </section>
+
+        <section id={styles.join}>
+          <div className={styles.wave2}>
+            <Image src={Wave} alt="Wave" />
+          </div>
+
+          <div className={styles.rectangle2}>
+            <Image src={Rectangle} alt="square" />
+          </div>
+
+          <div className={styles.join_content}>
+            <span className={styles.badge}>COME JOIN US</span>
+            <h1>Why Work Here</h1>
+            <p>From year to year we strive to invent the most innovative technology.</p>
+            <div className={styles.join_item}>
+              <div className={styles.join_value}>
+                <Image src={IconChecklist} alt="icon" />
+                <div className={styles.join_detail}>
+                  <h1>3500</h1>
+                  <p>Visitors</p>
+                </div>
+              </div>
+
+              <div className={styles.join_value}>
+                <Image src={IconChecklist} alt="icon" />
+                <div className={styles.join_detail}>
+                  <h1>36</h1>
+                  <p>Startups</p>
+                </div>
+              </div>
+
+              <div className={styles.join_value}>
+                <Image src={IconChecklist} alt="icon" />
+                <div className={styles.join_detail}>
+                  <h1>30</h1>
+                  <p>Mentors</p>
+                </div>
+              </div>
+
+              <div className={styles.join_value}>
+                <Image src={IconChecklist} alt="icon" />
+                <div className={styles.join_detail}>
+                  <h1>8</h1>
+                  <p>Countries</p>
+                </div>
+              </div>
+
+              <div className={styles.join_value}>
+                <Image src={IconChecklist} alt="icon" />
+                <div className={styles.join_detail}>
+                  <h1>6</h1>
+                  <p>Stages</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </Layout>

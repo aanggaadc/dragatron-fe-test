@@ -956,6 +956,19 @@
     color: #B3BAC5;
 }
 
+.search_bar input::placeholder { 
+    color: #B3BAC5;
+    opacity: 1; 
+  }
+  
+  .search_bar input:-ms-input-placeholder { 
+    color: #B3BAC5;
+  }
+  
+  .search_bar input::-ms-input-placeholder { 
+    color: #B3BAC5;
+  }
+
 .button_inside {
     background: #1565D8;
     border-radius: 8px;

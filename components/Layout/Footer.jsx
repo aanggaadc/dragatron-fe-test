@@ -19,7 +19,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <div className={styles.product}>
+                    <div className={styles.list_container}>
                         <h4>Product</h4>
                         <ul>
                             <li>Landingpage</li>
@@ -29,7 +29,7 @@ export default function Footer() {
                             <li>Pricing</li>
                         </ul>
                     </div>
-                    <div className={styles.service}>
+                    <div className={styles.list_container}>
                         <h4>Services</h4>
                         <ul>
                             <li>Documentation</li>
@@ -39,7 +39,7 @@ export default function Footer() {
                             <li>Ui Kit</li>
                         </ul>
                     </div>
-                    <div className={styles.company}>
+                    <div className={styles.list_container}>
                         <h4>Company</h4>
                         <ul>
                             <li>About</li>
@@ -48,7 +48,7 @@ export default function Footer() {
                             <li>Carrers</li>
                         </ul>
                     </div>
-                    <div className={styles.more}>
+                    <div className={styles.list_container}>
                         <h4>More</h4>
                         <ul>
                             <li>Documentation</li>

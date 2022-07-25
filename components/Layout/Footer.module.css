@@ -77,6 +77,12 @@
 }
 
 /* RESPONSIVE */
+@media (min-width: 1441px) {
+    .top {
+        justify-content: center;
+    }
+    
+}
 @media (max-width: 768px) {
     #footer {
         height: auto;

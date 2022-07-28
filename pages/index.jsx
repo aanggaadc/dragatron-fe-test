@@ -1,24 +1,25 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Layout from '../components/Layout/Layout'
-import styles from '../styles/Home.module.css'
-import { BsArrowRightShort, } from "react-icons/bs";
+import Head from "next/head";
+import Image from "next/image";
+import Layout from "../components/Layout/Layout";
+import styles from "../styles/Home.module.css";
+import JobCard from "../components/JobCard";
+import { BsArrowRightShort } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { FcNext } from "react-icons/fc";
-import Oval from '../public/assets/Oval.svg'
-import Oval2 from '../public/assets/Oval2.svg'
-import Square from '../public/assets/Square.svg'
-import Rectangle from '../public/assets/Rectangle.svg'
-import OvalFill from '../public/assets/OvalFill.svg'
-import OvalFill2 from '../public/assets/OvalFill2.svg'
-import Shape from '../public/assets/Shape.svg'
-import Shape2 from '../public/assets/Shape2.svg'
-import Collaboration from '../public/assets/Collaboration.svg'
-import Transparency from '../public/assets/Transparency.svg'
-import Trust from '../public/assets/Trust.svg'
-import Integrity from '../public/assets/Integrity.svg'
-import Wave from '../public/assets/Wave.svg'
-import IconChecklist from '../public/assets/IconChecklist.svg'
+import Oval from "../public/assets/Oval.svg";
+import Oval2 from "../public/assets/Oval2.svg";
+import Square from "../public/assets/Square.svg";
+import Rectangle from "../public/assets/Rectangle.svg";
+import OvalFill from "../public/assets/OvalFill.svg";
+import OvalFill2 from "../public/assets/OvalFill2.svg";
+import Shape from "../public/assets/Shape.svg";
+import Shape2 from "../public/assets/Shape2.svg";
+import Collaboration from "../public/assets/Collaboration.svg";
+import Transparency from "../public/assets/Transparency.svg";
+import Trust from "../public/assets/Trust.svg";
+import Integrity from "../public/assets/Integrity.svg";
+import Wave from "../public/assets/Wave.svg";
+import IconChecklist from "../public/assets/IconChecklist.svg";
 
 export default function Home() {
   return (
@@ -33,8 +34,14 @@ export default function Home() {
         <section id={styles.hero}>
           <div className={styles.content}>
             <h1>Come to join Us!</h1>
-            <p>From year to year we strive to invent the most innovative technology that is used by both small enterprises and space enterprises.</p>
-            <button>See Current Opening <BsArrowRightShort size={30} /></button>
+            <p>
+              From year to year we strive to invent the most innovative
+              technology that is used by both small enterprises and space
+              enterprises.
+            </p>
+            <button>
+              See Current Opening <BsArrowRightShort size={30} />
+            </button>
           </div>
           <div className={styles.oval}>
             <Image src={Oval} alt="oval" />
@@ -66,29 +73,57 @@ export default function Home() {
 
             <div className={styles.right}>
               <div className={styles.values_card}>
-                <Image src={Collaboration} alt="Collaboration" width={64} height={64} />
+                <Image
+                  src={Collaboration}
+                  alt="Collaboration"
+                  width={64}
+                  height={64}
+                />
                 <h2>Collaboration</h2>
-                <p>Collaboration is the process of two or more people or organizations working together to complete a task or achieve a goal. </p>
+                <p>
+                  Collaboration is the process of two or more people or
+                  organizations working together to complete a task or achieve a
+                  goal.{" "}
+                </p>
               </div>
 
               <div className={styles.values_card}>
-                <Image src={Transparency} alt="Collaboration" width={64} height={64} />
+                <Image
+                  src={Transparency}
+                  alt="Collaboration"
+                  width={64}
+                  height={64}
+                />
                 <h2>Transparency</h2>
-                <p>Transparency, as used in science is operating in such a way that it is easy for others to see what actions are performed. </p>
+                <p>
+                  Transparency, as used in science is operating in such a way
+                  that it is easy for others to see what actions are performed.{" "}
+                </p>
               </div>
 
               <div className={styles.values_card}>
                 <Image src={Trust} alt="Collaboration" width={64} height={64} />
                 <h2>Trust</h2>
-                <p>Trust will help us foster a positive and productive environment that delivers value to our users and customers. </p>
+                <p>
+                  Trust will help us foster a positive and productive
+                  environment that delivers value to our users and customers.{" "}
+                </p>
               </div>
 
               <div className={styles.values_card}>
-                <Image src={Integrity} alt="Collaboration" width={64} height={64} />
+                <Image
+                  src={Integrity}
+                  alt="Collaboration"
+                  width={64}
+                  height={64}
+                />
                 <h2>Integrity</h2>
-                <p>Integrity is the practice of showing a consistent and uncompromising adherence to strong moral and ethical principles. </p>
+                <p>
+                  Integrity is the practice of showing a consistent and
+                  uncompromising adherence to strong moral and ethical
+                  principles.{" "}
+                </p>
               </div>
-
             </div>
           </div>
 
@@ -127,7 +162,11 @@ export default function Home() {
 
           <div className={styles.team_title}>
             <h1>Who We Are</h1>
-            <p>We’re equal parts left and right brained. And we’re generally likeable. We won’t bored you with more adjectives. See for yourself.</p>
+            <p>
+              We’re equal parts left and right brained. And we’re generally
+              likeable. We won’t bored you with more adjectives. See for
+              yourself.
+            </p>
           </div>
         </section>
 
@@ -138,8 +177,16 @@ export default function Home() {
 
           <div className={styles.whatwedo_content}>
             <h1>What we do</h1>
-            <p>We supply enterprises, organizations and institutes of high-tech industries with modern components. We build long-term trusting relationships with our customers and partnes for further fruitful cooperations. <br /><br />
-              From year to year we strive to invent the most innovative technology that is used by both small enterprises and space enterprises.</p>
+            <p>
+              We supply enterprises, organizations and institutes of high-tech
+              industries with modern components. We build long-term trusting
+              relationships with our customers and partnes for further fruitful
+              cooperations. <br />
+              <br />
+              From year to year we strive to invent the most innovative
+              technology that is used by both small enterprises and space
+              enterprises.
+            </p>
           </div>
         </section>
 
@@ -155,7 +202,10 @@ export default function Home() {
           <div className={styles.join_content}>
             <span className={styles.badge}>COME JOIN US</span>
             <h1>Why Work Here</h1>
-            <p>From year to year we strive to invent the most innovative technology.</p>
+            <p>
+              From year to year we strive to invent the most innovative
+              technology.
+            </p>
             <div className={styles.join_item}>
               <div className={styles.join_value}>
                 <Image src={IconChecklist} alt="icon" />
@@ -204,7 +254,9 @@ export default function Home() {
           <h1>Let’s find you an open position.</h1>
           <div className={styles.job_top}>
             <div className={styles.top_left}>
-              <p>Find the right job for you no matter what it is that you do.</p>
+              <p>
+                Find the right job for you no matter what it is that you do.
+              </p>
             </div>
 
             <div className={styles.top_right}>
@@ -214,66 +266,34 @@ export default function Home() {
 
               <div className={styles.search_bar}>
                 <div className={styles.search_logo}>
-                  <BiSearch size={20} color='#B3BAC5' />
+                  <BiSearch size={20} color="#B3BAC5" />
                   <input type="text" placeholder="Search Positions" />
                 </div>
                 <button className={styles.button_inside}>Search</button>
               </div>
-              <button className={styles.button_outside} >Get Started</button>
+              <button className={styles.button_outside}>Get Started</button>
             </div>
           </div>
 
           <div className={styles.job_bottom}>
-            <div className={styles.job_card}>
-              <div className={styles.job_title}>
-                <h2>UX Designer</h2>
-                <p>New York, USA</p>
-              </div>
-              <FcNext />
-            </div>
-
-            <div className={styles.job_card}>
-              <div className={styles.job_title}>
-                <h2>UI Designer</h2>
-                <p>Los Angeles, USA</p>
-              </div>
-              <FcNext />
-            </div>
-
-            <div className={styles.job_card}>
-              <div className={styles.job_title}>
-                <h2>Copy Writer</h2>
-                <p>New York, USA</p>
-              </div>
-              <FcNext />
-            </div>
-
-            <div className={styles.job_card}>
-              <div className={styles.job_title}>
-                <h2>Front-End Designer</h2>
-                <p>San Fransisco, CA, USA</p>
-              </div>
-              <FcNext />
-            </div>
-
-            <div className={styles.job_card}>
-              <div className={styles.job_title}>
-                <h2>Front-End Engineer</h2>
-                <p>San Fransisco, CA, USA</p>
-              </div>
-              <FcNext />
-            </div>
-
-            <div className={styles.job_card}>
-              <div className={styles.job_title}>
-                <h2>Senior Back-end Developer</h2>
-                <p>New York, USA</p>
-              </div>
-              <FcNext />
-            </div>
+            <JobCard title="UX Designer" location="New York, USA" />
+            <JobCard title="UI Designer" location="Los Angeles, USA" />
+            <JobCard title="Copy Writer" location="New York, USA" />
+            <JobCard
+              title="Front-End Designer"
+              location="San Fransisco, CA, USA"
+            />
+            <JobCard
+              title="Front-End Engineer"
+              location="San Fransisco, CA, USA"
+            />
+            <JobCard
+              title="Senior Back-end Developer"
+              location="New York, USA"
+            />
           </div>
         </section>
       </Layout>
     </>
-  )
+  );
 }
